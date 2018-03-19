@@ -53,7 +53,7 @@ Full details in README.txt
 Data flow process: (slide, video) --> [ [] [] [] ] --> argmax predictions
 1. slides_every_second.py: sample, save video frames
 2. transformation_script.py: transform video slides if necessary
-3. maybe need to split, rearrange video
+3. rearrange_all_in_path: maybe need to split, rearrange video
 4. save_pdf_as_imgs.py: if slides are one PDF -- break up into multiple PNGs
 5. saveImgKeypoints.py: save keypoints, descriptors in pickle file
 6. computeDiffKeyptLocations.py: matrix of each [slide1 ... slideM] x [frame1 ... frameN], argmax -- best predictions
